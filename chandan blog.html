@@ -194,10 +194,19 @@
                 <label>Message</label>
                 <textarea class="input-field" name="message"></textarea>
 
-                <input id="submit-btn" type="submit" value="Send">
+                <input id="submit-btn" type="submit" value="Send" onclick="myFunction()">
             </form>
         </div>
     </section>
+    
+    <script>
+function myFunction() {
+  document.getElementById("contact-form").reset();
+}
+</script>
+    
+    
+    
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzvO6TrvFPZHdDNGwL4HnNjF_rcMl6UlKlA7F-X1THH-s84Jc7q/exec'
         const form = document.forms['submit-to-google-sheet']
